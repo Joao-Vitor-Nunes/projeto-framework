@@ -1,9 +1,7 @@
-
+const { produtos } = require("./produtosController")
 
 const catalogo = function(req, res) {
-    res.render('catalogo/index', {
-        title: "Teste"
-    })
+    res.render('catalogo/index', {produtos})
 }
 
 

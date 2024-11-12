@@ -4,21 +4,12 @@
     <title>Produtos</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <%= produto%>
+  
   <body>
-    <h1>Buscar</h1>
-        <ul>
-            <li>
-                <a href="/produtos/produto-1">Produto 1</a>
-            </li>
+<h1>aaaaaaaaaaa</h1>
 
-            <li>
-                <a href="/produtos/produto-2">Produto 2</a>
-            </li>
-
-            <li>
-                <a href="/produtos/produto-3">Produto 3</a>
-            </li>
-        </ul>
+    <%produtosFiltrados.forEach((produto)=> { %>
+      <p><%=produto.titulo%></p>
+      <%})%>
   </body>
 </html>

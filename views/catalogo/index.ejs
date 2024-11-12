@@ -1,146 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catálogo de Livros</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
 
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Catálogo de Livros</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+      <a class="navbar-brand" href="#">Catálogo de Livros</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <form action="/produtos/buscar" method="get" class="my-auto rounded">
+            <input type="text" name="titulo" />
+            <button type="submit">Buscar</button>
+          </form>
 
-                <form action="/produtos/buscar" method="get" class="my-auto rounded">
-                    <input type="text" name="pesquisa">
-                  </form>
-                  
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ínicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-        </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ínicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-
     <header class="jumbotron jumbotron-fluid text-center bg-light">
-        <div class="container">
-            <h1 class="display-4">Galeria de Livros</h1>
-            <p class="lead">Navegue na nossa imensa galeria com diversos livros!</p>
-        </div>
+      <div class="container">
+        <h1 class="display-4">Galeria de Livros</h1>
+        <p class="lead">Navegue na nossa imensa galeria com diversos livros!</p>
+      </div>
     </header>
 
     <section class="container my-5">
-        <h2 class="text-center mb-4">Livros em Destaque</h2>
-        <div class="row">
+      <h2 class="text-center mb-4">Nossa Galeria</h2>
 
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://m.media-amazon.com/images/I/91BsZhxCRjL._SY466_.jpg" class="card-img-top" alt="Livro 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Revolução dos Bichos - George Orwell</h5>
-                        <p class="card-text"> Uma fábula satírica sobre uma fazenda onde os animais se rebelam contra os humanos, simbolizando regimes autoritários e criticando o poder corruptor.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://m.media-amazon.com/images/I/612B0id4gNL._SY466_.jpg" class="card-img-top" alt="Livro 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Meditações - Marco Aurélio</h5>
-                        <p class="card-text">Um clássico da filosofia estoica, onde o imperador romano reflete sobre virtudes, autocontrole e a busca pela serenidade interior, abordando temas atemporais como resiliência e moralidade.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://m.media-amazon.com/images/I/91Zffgxa4YL._SY466_.jpg" class="card-img-top" alt="Livro 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Em nome do povo - Bruno Perini</h5>
-                        <p class="card-text">Uma análise de como líderes populistas manipulam discursos para ganhar poder e controlar a opinião pública. O livro incentiva o pensamento crítico sobre a política, alertando sobre as consequências econômicas e sociais do populismo no Brasil.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-5">
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://m.media-amazon.com/images/I/91BsZhxCRjL._SY466_.jpg" class="card-img-top" alt="Livro 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Revolução dos Bichos - George Orwell</h5>
-                        <p class="card-text"> Uma fábula satírica sobre uma fazenda onde os animais se rebelam contra os humanos, simbolizando regimes autoritários e criticando o poder corruptor.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://m.media-amazon.com/images/I/612B0id4gNL._SY466_.jpg" class="card-img-top" alt="Livro 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Meditações - Marco Aurélio</h5>
-                        <p class="card-text">Um clássico da filosofia estoica, onde o imperador romano reflete sobre virtudes, autocontrole e a busca pela serenidade interior, abordando temas atemporais como resiliência e moralidade.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://m.media-amazon.com/images/I/91Zffgxa4YL._SY466_.jpg" class="card-img-top" alt="Livro 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Em nome do povo - Bruno Perini</h5>
-                        <p class="card-text">Uma análise de como líderes populistas manipulam discursos para ganhar poder e controlar a opinião pública. O livro incentiva o pensamento crítico sobre a política, alertando sobre as consequências econômicas e sociais do populismo no Brasil.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="d-flex flex-column align-items-center flex-wrap">
+        <%produtos.forEach((produto)=> { %>
+        <p><%=produto.titulo%></p>
+        <%})%>
+      </div>
     </section>
 
 
-<div class="pb-5">
-    <a href="#" style="width: 8%; " class="btn btn-primary btn-block mx-auto pd-5">Ver mais</a>
-</div>
+    <div class="pb-5">
+      <a
+        href="#"
+        style="width: 8%"
+        class="btn btn-primary btn-block mx-auto pd-5"
+        >Ver mais</a
+      >
+    </div>
 
-<footer class="bg-primary text-white text-center py-3">
-    <p class="mb-0">Catálogo de Livros &copy; 2024 - Todos os direitos reservados.</p>
-</footer>
+    <footer class="bg-primary text-white text-center py-3">
+      <p class="mb-0">
+        Catálogo de Livros &copy; 2024 - Todos os direitos reservados.
+      </p>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
