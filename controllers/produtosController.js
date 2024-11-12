@@ -27,10 +27,11 @@ const visualizar = function (req, res) {
 
 const buscar = function (req, res) {
   const titulo = req.query.titulo;
-  const produtosFiltrados = produtos.filter((produto) => produto.titulo.includes(titulo));
+  const produtosFiltrados = produtos.filter((produto) => produto.titulo.toLowerCase().includes(titulo.toLowerCase()));
   res.render("produtos/buscar", {
     produtosFiltrados,
   });
 };
+
 
 module.exports = { listar, visualizar, buscar, produtos };

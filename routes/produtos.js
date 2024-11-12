@@ -4,7 +4,7 @@ const { listar, visualizar, buscar } = require('../controllers/produtosControlle
 
 /* GET home page. */
 router.get('/', listar);
-router.get('/:id', visualizar)
 router.get('/buscar', buscar)
+router.get('/:id', visualizar)
 
 module.exports = router;
