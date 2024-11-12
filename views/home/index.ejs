@@ -15,11 +15,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
+                
+                <form action="/produtos/buscar" method="get" class="my-auto rounded">
+                    <input type="text" name="pesquisa">
+                  </form>
+
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Catálogo</a>
+                    <a class="nav-link" href="/views/catalogo/index.ejs">Catálogo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contato</a>
@@ -49,7 +54,7 @@
                         <p class="card-text"> Uma fábula satírica sobre uma fazenda onde os animais se rebelam contra os humanos, simbolizando regimes autoritários e criticando o poder corruptor.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
+                        <a href="/produtos/produto-1" class="btn btn-primary btn-block">Ver detalhes</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +67,7 @@
                         <p class="card-text">Um clássico da filosofia estoica, onde o imperador romano reflete sobre virtudes, autocontrole e a busca pela serenidade interior, abordando temas atemporais como resiliência e moralidade.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
+                        <a href="/produtos/produto-2" class="btn btn-primary btn-block">Ver detalhes</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +80,7 @@
                         <p class="card-text">Uma análise de como líderes populistas manipulam discursos para ganhar poder e controlar a opinião pública. O livro incentiva o pensamento crítico sobre a política, alertando sobre as consequências econômicas e sociais do populismo no Brasil.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary btn-block">Ver detalhes</a>
+                        <a href="/produtos/produto-3" class="btn btn-primary btn-block">Ver detalhes</a>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const visualizar = function(req, res) {
 const buscar = function(req, res) {
     const produto = req.query.produto
     res.render('produtos/buscar', {
-        produtos: "produtos"
+        produto
     })
 }
 
