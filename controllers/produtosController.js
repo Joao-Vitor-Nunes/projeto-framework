@@ -11,17 +11,16 @@ Array.from({ length: 20 }).forEach((_, index) => {
   });
 });
 
-const listar = function (req, res) {
-  const nomeProduto = req.params.nome;
-  res.render("produtos/listar", {
-    nomeProduto: nomeProduto,
-  });
+const listar =  (req, res) => {
+  return res.render("produtos/listar", { produtos });
 };
 
 const visualizar = function (req, res) {
   const id = req.params.id;
+  const produto = produtos.filter((produto) => produto.id == id)
+
   res.render("produtos/visualizar", {
-    id,
+    produto:produto[0],
   });
 };
 
@@ -32,6 +31,8 @@ const buscar = function (req, res) {
     produtosFiltrados,
   });
 };
+
+
 
 
 module.exports = { listar, visualizar, buscar, produtos };

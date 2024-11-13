@@ -58,7 +58,7 @@
 
       <div class="d-flex flex-column align-items-center flex-wrap">
         <%produtos.forEach((produto)=> { %>
-        <p><%=produto.titulo%></p>
+        <a href="/produtos/<%=produto.id%>/listar"><%=produto.titulo%></a>
         <%})%>
       </div>
     </section>
