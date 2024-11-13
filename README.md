@@ -1,4 +1,4 @@
-Projeto Framework
+
 Este é um projeto de sistema web desenvolvido com Express, voltado para a exibição e busca de itens de um catálogo. Ele permite ao usuário navegar pelo catálogo, pesquisar itens específicos e visualizar detalhes dos produtos.
 
 Funcionalidades
