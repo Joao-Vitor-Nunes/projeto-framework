@@ -2,6 +2,8 @@ const { faker } = require("@faker-js/faker");
 
 const produtos = [];
 
+const Livro = require('../controllers/models/produto')
+
 Array.from({ length: 20 }).forEach((_, index) => {
   produtos.push({
     id: index,
@@ -11,9 +13,12 @@ Array.from({ length: 20 }).forEach((_, index) => {
   });
 });
 
-const listar =  (req, res) => {
-  return res.render("produtos/listar", { produtos });
-};
+const listar =  function(req, res){
+  const livros = new Livro()
+  return res.render("produtos/listar"), {
+  livros: livros.listar()
+  };
+}
 
 const visualizar = function (req, res) {
   const id = req.params.id;
